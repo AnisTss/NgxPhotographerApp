@@ -1,21 +1,47 @@
-.grid-container {
+.photos-container {
+  width: 100%;
   margin: 20px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+.photo-card {
+  margin: 4px;
+  padding: 0;
+  flex-shrink: 0;
+  flex-grow: 0; 
+  top: 2px; 
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  height: 320px;
+  width: 320px;
 }
 
+
+.photo-card-content {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  img {
+    margin: -20px 0 0 -75px;
+  }
+}
 .more-button {
   position: absolute;
   top: 5px;
   right: 10px;
 }
 
-.dashboard-card-content {
-  text-align: center;
+.center-title {
+  margin: auto;
+}
+.zero-margin-bottom {
+  margin-bottom: 0;
+}
+.zero-margin-top {
+  margin-top: 0;
+}
+mat-toolbar-row {
+  height: 64px;
 }

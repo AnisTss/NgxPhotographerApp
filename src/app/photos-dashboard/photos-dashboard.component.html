@@ -1,24 +1,23 @@
-<div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>Expand</button>
-              <button mat-menu-item>Remove</button>
-            </mat-menu>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span class="mat-display-2 center-title stylish-font zero-margin-bottom">Chargui Waheb</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span class="mat-headline center-title stylish-font zero-margin-top">Photography</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<div class="photos-container">
+      <mat-card class="photo-card" *ngFor="let photo of photoCollection">
+        <mat-card-content class="photo-card-content">
+            <img src="{{photo.link}}" alt="{{photo.title}}"> 
         </mat-card-content>
       </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
 </div>

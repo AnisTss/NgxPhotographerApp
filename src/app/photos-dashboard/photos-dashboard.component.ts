@@ -7,27 +7,76 @@ import { Breakpoints, BreakpointState, BreakpointObserver } from '@angular/cdk/l
   templateUrl: './photos-dashboard.component.html',
   styleUrls: ['./photos-dashboard.component.scss']
 })
+
+/**
+ * This components is just for demo purposes it is Work In Progress
+ * The photo container should be a seperate component
+ * The toolbar should be also a seperate component that must be floating
+ */
 export class PhotosDashboardComponent {
   /** Based on the screen size, switch from standard to one column per row */
-  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-    map(({ matches }) => {
-      if (matches) {
-        return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
-        ];
-      }
+  photoCollection = [
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/1.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/2.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/3.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/4.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/5.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/1.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/2.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/3.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/4.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/5.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/1.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/2.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/3.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/4.jpg'
+    },
+    {
+      title: '',
+      link: 'http://www.gstatic.com/webp/gallery/5.jpg'
+    },
+  ];
 
-      return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
-      ];
-    })
-  );
-
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) { }
 }

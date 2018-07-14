@@ -6,7 +6,7 @@ import { PhotosDashboardComponent } from './photos-dashboard/photos-dashboard.co
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +20,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
+    MatToolbarModule,
     LayoutModule
   ],
   providers: [],
