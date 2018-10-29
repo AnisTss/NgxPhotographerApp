@@ -16,37 +16,6 @@
     height: 100%;
     mat-drawer-container {
         height: 100%;
-        .sidebar-content {
-            height: 100%;
-            display: flex;
-            width: 320px;
-            display: flex;
-            flex-flow: column nowrap;
-            // justify-content: center;
-            align-items: center;
-            .waheb-name {
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                justify-content: center;
-                flex: 27 1 auto;
-                .special-font {
-                    font-family: 'Mali', 'Courier New', Courier, monospace;
-                }
-            }
-            .social-links {
-                flex: 1 1 auto;
-                height: 80px;
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-around;
-                a {
-                    margin: 16px;
-                color: #212130;
-
-                }
-            }
-        }
 
     }
 }

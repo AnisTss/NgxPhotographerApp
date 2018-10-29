@@ -1,3 +1,4 @@
+import { EventsComponent } from './events/events.component';
 import { AboutComponent } from './about/about.component';
 import { ClientsComponent } from './clients/clients.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +12,10 @@ const appRoutes: Routes = [
   {
     path: 'heroes',
     component: HomeComponent,
+  },
+  {
+    path: 'events',
+    component: EventsComponent
   },
   {
     path: 'portraits',

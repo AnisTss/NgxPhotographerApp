@@ -1,0 +1,54 @@
+:host {
+    height: 100%;
+    margin-right: 64px;
+    margin-left: 64px;
+    display: flex;
+    flex-flow: row wrap;
+    // justify-content: center;
+    align-items: center;
+    align-content: center;
+    // .left-fields {
+    //     margin-right: 16px;
+    //     margin-left: 32px;
+    //     flex: 1 1 auto;
+    //     // width: 100%;
+    //     display: flex;
+    //     flex-flow: column nowrap;
+    // }
+    // .right-fields {
+    //     flex: 3 1 auto;
+    //     margin-right: 32px;
+    //     margin-left: 16px;
+    //     // width: 100%;
+    //     mat-form-field {
+    //         width: 100%;
+    //     }
+    // }
+    .name {
+        flex: 1 1 auto;
+        min-width: 300px;
+        margin: 0 8px 0 8px;
+    }
+    .email {
+        flex: 1 1 auto;
+        min-width: 300px;
+        margin: 0 8px 0 8px;
+
+    }
+    .subject {
+        flex: 2 1 auto;
+        width: 100%;
+        margin: 0 8px 0 8px;
+
+    }
+    .text {
+        flex: 2 1 auto;
+        width: 100%;
+        margin: 0 8px 0 8px;
+        max-height: 320px;
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+    }
+}

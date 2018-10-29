@@ -3,10 +3,16 @@
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    .buttons-container {
+        display: flex;
+        flex-flow: row nowrap;
+        // justify-content: flex-end;
+        width: 100%;
+    }
     mat-toolbar {
         height: 42px;
     }
     .nav-button {
-        margin-right: 16px;
+        margin-right: 64px;
     }
 }   
