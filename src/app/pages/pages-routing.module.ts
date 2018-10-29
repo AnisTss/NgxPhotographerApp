@@ -22,7 +22,6 @@ const appRoutes: Routes = [
   },
   {
     path: 'contact',
-    
     component: ContactComponent
   },
   {
@@ -42,7 +41,7 @@ const appRoutes: Routes = [
     CommonModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      // { enableTracing: true } // <-- debugging purposes only
     )
   ],
   exports: [RouterModule],
