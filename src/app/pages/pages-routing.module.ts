@@ -1,3 +1,5 @@
+import { FictionComponent } from './fiction/fiction.component';
+import { DocumentaryComponent } from './documentary/documentary.component';
 import { EventsComponent } from './events/events.component';
 import { AboutComponent } from './about/about.component';
 import { ClientsComponent } from './clients/clients.component';
@@ -20,6 +22,14 @@ const appRoutes: Routes = [
   {
     path: 'portraits',
     component: PortraitsComponent
+  },
+  {
+    path: 'documentary',
+    component: DocumentaryComponent
+  },
+  {
+    path: 'fiction',
+    component: FictionComponent
   },
   {
     path: 'clients',
