@@ -1,28 +1,27 @@
-.sidebar-content {
-    height: 100%;
-    display: flex;
-    width: 320px;
+:host {
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    // justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+
     .waheb-name {
+        margin-top: 20%;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        flex: 27 1 auto;
-
     }
+
     .social-links {
-        flex: 1 1 auto;
         height: 80px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
+
         a {
             margin: 16px;
-        color: #212130;
+            color: #212130;
 
         }
     }

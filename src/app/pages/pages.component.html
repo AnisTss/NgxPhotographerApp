@@ -1,49 +1,14 @@
-<mat-toolbar color="primary">
-    <div class="buttons-container">
-        <a class="nav-button" mat-button routerLink="home">
-            <span class="special-font">
-                Home
-            </span>
-        </a>
-        <a class="nav-button" mat-button routerLink="events">
-            <span class="special-font">
-                Events
-            </span>
-        </a>
-        <a class="nav-button" mat-button routerLink="portraits">
-            <span class="special-font">
-                Portraits
-            </span>
-        </a>
-        <a class="nav-button" mat-button routerLink="documentary">
-            <span class="special-font">
-                Documentary
-            </span>
-        </a>
-        <a class="nav-button" mat-button routerLink="fiction">
-            <span class="special-font">
-                Fiction
-            </span>
-        </a>
-        <a class="nav-button" mat-button routerLink="clients">
-            <span class="special-font">
-                Clients
-            </span>
-        </a>
-        <a class="nav-button" mat-button routerLink="about">
-            <span class="special-font">
-                Bio
-            </span>
-        </a>
-        <!-- <a class="nav-button" mat-button routerLink="contact">
-            <span class="special-font">
-                Contact
-            </span>
-        </a> -->
-    </div>
+<app-navbar [items]="navigationItems">
 
-</mat-toolbar>
+</app-navbar>
+
 <div class="pages">
-
-    <router-outlet></router-outlet>
+    <mat-drawer-container class="example-container">
+        <mat-drawer class="sidenav" mode="side" [opened]="sidebarOpened">
+            <app-sidebar-content [title]="currentPageTitle"></app-sidebar-content>
+        </mat-drawer>
+        <mat-drawer-content>
+            <router-outlet (activate)="onActivate($event)"></router-outlet>
+        </mat-drawer-content>
+    </mat-drawer-container>
 </div>

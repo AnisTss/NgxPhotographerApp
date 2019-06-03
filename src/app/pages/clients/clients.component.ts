@@ -1,3 +1,4 @@
+import { PageComponent } from './../page/page.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './clients.component.html',
   styleUrls: ['./clients.component.scss']
 })
-export class ClientsComponent implements OnInit {
+export class ClientsComponent extends PageComponent implements OnInit {
 
-  constructor() { }
+  name = 'CLIENTS';
+  constructor() {
+    super();
+  }
 
   ngOnInit() {
   }

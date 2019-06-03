@@ -1,3 +1,4 @@
+import { NavbarComponent } from './../components/navbar/navbar.component';
 import { VideoCardComponent } from './../components/video-card/video-card.component';
 import { SidebarContentComponent } from './../components/sidebar-content/sidebar-content.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -22,6 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { FictionComponent } from './fiction/fiction.component';
 import { DocumentaryComponent } from './documentary/documentary.component';
+import { PageComponent } from './page/page.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
     declarations: [
@@ -36,7 +39,9 @@ import { DocumentaryComponent } from './documentary/documentary.component';
         ContactFormComponent,
         FictionComponent,
         VideoCardComponent,
-        DocumentaryComponent
+        DocumentaryComponent,
+        NavbarComponent,
+        PageComponent
     ],
     imports: [
         CommonModule,
@@ -49,7 +54,8 @@ import { DocumentaryComponent } from './documentary/documentary.component';
         MatFormFieldModule,
         MatIconModule,
         MatInputModule,
-        MatCardModule
+        MatCardModule,
+        LayoutModule
     ],
     exports: [
         PagesComponent

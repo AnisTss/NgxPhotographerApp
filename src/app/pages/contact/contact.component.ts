@@ -1,3 +1,4 @@
+import { PageComponent } from './../page/page.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent extends PageComponent implements  OnInit {
 
-  constructor() { }
+  name = 'CONTACT US';
+
+  constructor() {
+    super();
+  }
 
   ngOnInit() {
   }

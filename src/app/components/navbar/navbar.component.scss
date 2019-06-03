@@ -1,0 +1,23 @@
+:host {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    min-height: 42px;
+    width: 100%;
+
+    .buttons-container {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .nav-button {
+        margin-right: 16px;
+        flex: 0 1 auto;
+    }
+
+}
