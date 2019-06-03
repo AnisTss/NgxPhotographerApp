@@ -4,12 +4,21 @@
     <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content class="content">
-    <ng-content>
+    <div class="video">
+      <ng-content>
 
-    </ng-content>
-    <p>
-      {{description}}
-    </p>
+      </ng-content>
+    </div>
+
+    <div class="description" *ngIf="description">
+      <span class="mat-title">
+        Description
+      </span>
+      <p class=" mat-body">
+        {{description}}
+      </p>
+    </div>
+
   </mat-card-content>
   <mat-card-actions>
   </mat-card-actions>

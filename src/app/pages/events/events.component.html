@@ -2,5 +2,11 @@
     <mat-drawer mode="side" opened>
         <app-sidebar-content [title]="'EVENTS'"></app-sidebar-content>
     </mat-drawer>
-  
-  </mat-drawer-container>
+    <div class="content">
+        <app-video-card [title]="'Coup de tunisie VTT'" [subtitle]="'by waheb chargui'" [description]="coupDesc">
+            <iframe height="315" src="https://www.youtube.com/embed/z3-YaG9VEKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </app-video-card>
+    </div>
+
+</mat-drawer-container>

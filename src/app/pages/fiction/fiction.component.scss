@@ -15,11 +15,12 @@
     height: 100%;
     mat-drawer-container {
         height: 100%;
-
-
     }
-
     .content {
-    padding: 32px;
+        padding: 32px;
+        flex-flow: column nowrap;
+        app-video-card {
+            margin-left: 16px;
+        }
     }
 }

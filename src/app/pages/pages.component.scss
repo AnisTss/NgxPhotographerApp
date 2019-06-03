@@ -1,5 +1,5 @@
 :host{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -14,5 +14,9 @@
     }
     .nav-button {
         margin-right: 64px;
+    }
+    .pages {
+        position: relative;
+        height: calc(100% - 42px);
     }
 }   

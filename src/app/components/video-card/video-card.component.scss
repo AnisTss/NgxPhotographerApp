@@ -1,5 +1,15 @@
 .content {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-items: center;
+    .video {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 0 50%
+    }
+    .description {
+        margin: 32px;
+        flex: 1 1 auto;
+    }
+    
 }

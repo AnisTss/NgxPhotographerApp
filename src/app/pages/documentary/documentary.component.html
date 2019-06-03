@@ -2,5 +2,25 @@
   <mat-drawer mode="side" opened>
     <app-sidebar-content [title]="'DOCUMENTARY'"></app-sidebar-content>
   </mat-drawer>
+  <div class="content">
+    <app-video-card [title]="'Documentary of the First Year of Tunisia88'" [subtitle]="'by waheb chargui'"
+      [description]="tuni88Desc">
+      <iframe height="315" src="https://www.youtube.com/embed/eJos8eImi2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </app-video-card>
+    <app-video-card [title]="'Working Women’s Rights under Scrutiny'" [subtitle]="'by waheb chargui'" [description]="workingWomenDesc">
+      <iframe height="315" src="https://www.youtube.com/embed/wnlr83fPBw4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </app-video-card>
+
+    <app-video-card [title]="'Resume Tunisia88'" [subtitle]="'by waheb chargui'">
+      <iframe height="315" src="https://www.youtube.com/embed/MI2zX6N3alA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </app-video-card>
+
+    <app-video-card [title]="'Association Rayhana 2017'" [subtitle]="'by waheb chargui'">
+      <iframe height="315" src="https://www.youtube.com/embed/URsDdWuf_Zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </app-video-card>
+  </div>
 
 </mat-drawer-container>
